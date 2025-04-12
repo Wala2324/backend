@@ -1,0 +1,106 @@
+
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-input:focus {
+    border-color: #036803;
+    outline: none;
+  }
+  
+  .input-error {
+    border-color: #0e942f;
+    background-color: #fee;
+  }
+  
+  .subscribe-btn {
+    background:  #0b3e17;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* margin-top: 10px; */
+  }
+  
+  .subscribe-btn:hover {
+    background: #0e942f;
+  }
+  
+  
+  
+  .subscription-message {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .success {
+    color: #28a745;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .error {
+    color: #0e942f;
+    background-color: #d7f8d9;
+    border: 1px solid #cbf5c6;
+  }
+  
+  @media (max-width: 600px) {
+    .subscription-form {
+      max-width: 100%;
+      padding: 15px;
+    }
+  
+    .form-input, .subscribe-btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+
+  .shopping-cart-wrapper {
+    max-height: 90vh; /* Max height of the full cart */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .shopping-cart-scroll {
+    overflow-y: auto;
+    flex-grow: 1;
+    padding-right: 8px; /* For scrollbar space */
+    max-height: 60vh; /* Adjust to your layout */
+  }
+  
